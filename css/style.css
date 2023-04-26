@@ -1,0 +1,302 @@
+/* ============== */
+/* Basic */
+/* ============== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+html{
+    font-size: 62.5%;
+	scroll-behavior:smooth;
+}
+button:focus,input:focus{
+    outline: none;
+}
+/* ============== */
+/* Reuseable */
+/* ============== */
+.heading{
+    font-size: 4rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #003167;
+    text-align: center;
+}
+.heading-title{
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: #666666;
+    line-height: 2.6rem;
+}
+.btn-1{
+    padding: 1.3rem 2rem;
+    font-size: 1.8rem;
+    background: #ffb507;
+    word-spacing: .5rem;
+    color: #ffff;
+    border: 1px solid #ffb507;
+}
+.btn-1:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.btn-2{
+    font-size: 1.8rem;
+    padding: 1.2rem 4.6rem;
+    color: #666666;
+    background: none;
+    border: 1px solid #666;
+}
+.btn-2:hover{
+    color: #666;
+    text-decoration: none;
+}
+/* ============== */
+/* Header */
+/* ============== */
+/* Sticky Menu */
+.sticky-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999999999;
+    padding: 1.5rem !important;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.397);
+}
+.navbar-light .active .nav-link{
+    
+}
+.nav-link{
+    font-size: 1.6rem !important;
+    margin-right: 3.2rem;
+    position: relative;
+}
+.navbar-light .navbar-nav .active > .nav-link{
+    color: #ffb507 !important;
+    position: relative;
+}
+.navbar-light .active .nav-link::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: .2rem;
+    background: #ffb507;
+    top: 120%;
+    left: 0;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+}
+.navbar-light .nav-link::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: .2rem;
+    background: #ffb507;
+    top: 120%;
+    left: 0;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+}
+.navbar-light .nav-link:hover::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: .2rem;
+    background: #ffb507;
+    top: 120%;
+    left: 0;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -o-transition: all .4s ease;
+}
+.navbar-light .navbar-btn:hover::after{
+    width: 0%;
+}
+.nav-btn .navbar-btn{
+    color: rgba(0,0,0,0.5) !important;
+    border: 1px solid rgba(0,0,0,0.7);
+    padding: .6rem 3rem !important;
+    font-weight: 600;
+    margin-right: 0 !important;
+}
+
+.header-content{
+    margin-top: 8rem;
+}
+.header-heading{
+    color: #003167;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 6.5rem;
+    text-transform: capitalize;
+}
+.header-content .heading-title{
+    width: 70%;
+    margin: auto;
+}
+/* ============== */
+/* About */
+/* ============== */
+#about-section{
+    padding: 10rem 0;
+}
+.system-name{
+    font-size: 2.1rem;
+    color: #333333;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin: 6rem 0 2.5rem;
+}
+.about-banner-bg{
+    background-image: url('../img/banner2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    padding-right: 2rem;
+}
+.about-content{
+    padding:5rem 8rem;
+}
+.about-heading{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+    color: #fff;
+    line-height: 1.2;
+}
+/* ============== */
+/* Services */
+/* ============== */
+.service-heading{
+    color: #003167;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 1.3;
+}
+/* ============== */
+/* Review */
+/* ============== */
+#review-section{
+    padding: 8rem 0;
+}
+.review-box{
+    margin-top: 5rem;
+    background: #f4f4f4;
+    padding: 8rem 0;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+.number{
+    position: relative;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: #ffb507;
+    line-height: 3.5rem;
+    font-size: 1.6rem;
+}
+.number::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 115%;
+    width: 24rem;
+    border-bottom: .1em dotted #a2a2a2;
+}
+.number-no-dot-4::after{
+    width: 0 !important;
+}
+/* ============== */
+/* App */
+/* ============== */
+.app-content h4{
+    font-size: 1.6rem;
+    color: #05cab6;
+    font-weight: 700 !important;
+}
+.app-content h2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #003167;
+    font-size: 4rem;
+}
+.app-content p{
+    font-size: 1.6rem;
+    color: #0d293b;;
+    line-height: 2.6rem;
+}
+.app-btn img{
+    width: 2rem !important;
+}
+.btn-2-app{
+    padding: 1.3rem 2rem;
+    font-size: 1.8rem;
+    background: transparent;
+    word-spacing: .5rem;
+    color: #666666;
+    border: 1px solid #666666;
+}
+.btn-2-app:hover{
+    color: #666666;
+    text-decoration: none;
+}
+/* ============== */
+/* Contact */
+/* ============== */
+.link p {
+    margin: .5rem !important;
+}
+.link p a {
+    color: rgba(0,0,0,0.7);
+    font-weight: 500;
+}
+.link p a:hover{
+    text-decoration: underline;
+}
+.social-link h5{
+    color: rgba(0,0,0,0.7);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.social-link a i{
+    margin-top: 1rem;
+    color: rgba(0,0,0,0.7);
+    font-size: 2rem;
+    margin-right: 2rem;
+    transition: all .1s ease-in-out;
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+}
+.social-link a i:hover{
+    color: #ffb507;
+    transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+}
+/* ============== */
+/* Footer */
+/* ============== */
+footer P{
+    font-size: 1.6rem;
+    color: rgba(0,0,0,0.7);
+}
